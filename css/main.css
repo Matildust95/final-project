@@ -1,0 +1,167 @@
+/* index.html */
+
+body, html {
+  background: rgb(10, 2, 56);
+  font-size: 100%;
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: hidden; /* Hide vertical scrollbar */
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url(../photos/backgroundimg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  font-size: 39px;
+  font-family: 'Cedarville Cursive', cursive;
+  color:white;
+}
+
+
+.caption {
+  font-size: 22px;
+  font-family: 'Crimson Text', serif;
+  color: white;
+  overflow: hidden;
+}
+
+input {
+  font-size: 31px;
+  font-family: 'Cedarville Cursive', cursive;
+  color: white;
+  overflow: hidden;
+  letter-spacing: 8px;
+  margin: 0;
+  text-align: center;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 50%; 
+  border-bottom: 1px solid white;
+  background: transparent;
+}
+
+input:focus {
+  outline: none;
+}
+
+#form {
+  background-color:rgba(72,72,72,0.4);
+  padding-left:35px;
+  padding-right:35px;
+  padding-top:35px;
+  padding-bottom:50px;
+  width: 450px;
+  float: center;
+  left: 50%;
+  position: absolute;
+  margin-top:30px;
+  margin-left: -260px;
+}
+
+.caption-years {
+  font-size: 17px;
+  font-family: 'Crimson Text', serif;
+  color: white;
+  overflow: hidden;
+}
+
+
+/* Disabled the number input spinners (the form scroll) */
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  line-height: 75px;
+  text-align: center;
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 33px;
+  font-family: 'Cedarville Cursive', cursive;
+  color: white;
+}
+
+p {
+  font-size: 24px;
+  font-family: 'Crimson Text', serif;
+  color: white;
+  line-height: normal;
+}
+
+.carousel-caption {
+  background-color:rgba(72, 72, 72, 0.575);
+}
+
+/* Underline sliding effect link */
+
+.link {
+float: left;
+position: relative;
+margin: 15px;
+padding-top: 5px;
+padding-bottom: 5px;
+text-decoration: none;
+font-size: 50px;
+font-family: 'Cedarville Cursive', cursive;
+color: white;
+}
+
+a:after {
+content: '';
+display: block;
+position: absolute;
+bottom: 0;
+left: 50%;
+height: 2px;
+width: 0;
+background: transparent;
+}
+
+.link:after {
+transition: .6s ease, .6s ease, left .6s ease;
+}
+
+.link:hover:after {
+width: 100%;
+left: 0;
+background: white;
+}
+
+a, a:hover, a:focus, a:active {
+text-decoration: none;
+color: white;
+}
